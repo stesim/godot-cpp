@@ -79,7 +79,7 @@ struct TypeInherits {
 			!TypesAreSame<B volatile const, void volatile const>::value;
 };
 
-static PropertyInfo make_property_info(Variant::Type p_type, const StringName &p_name, uint32_t p_hint = PROPERTY_HINT_NONE, const String &p_hint_string = "", uint32_t p_usage = PROPERTY_USAGE_DEFAULT, const StringName &p_class_name = "") {
+inline PropertyInfo make_property_info(Variant::Type p_type, const StringName &p_name, uint32_t p_hint = PROPERTY_HINT_NONE, const String &p_hint_string = "", uint32_t p_usage = PROPERTY_USAGE_DEFAULT, const StringName &p_class_name = "") {
 	PropertyInfo info;
 	info.type = p_type;
 	info.name = p_name;
